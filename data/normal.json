@@ -1,0 +1,91 @@
+{
+  "left": [
+    {
+      "row_id": "l1",
+      "key": "a",
+      "region": "hall",
+      "reading": 10
+    },
+    {
+      "row_id": "l2",
+      "key": "a",
+      "region": "hall",
+      "reading": null
+    },
+    {
+      "row_id": "l3",
+      "key": null,
+      "region": "outer",
+      "reading": 5
+    }
+  ],
+  "right": [
+    {
+      "row_id": "r1",
+      "key": "a",
+      "category": "thermal"
+    },
+    {
+      "row_id": "r2",
+      "key": "a",
+      "category": "thermal"
+    }
+  ],
+  "batches": [
+    {
+      "id": "b1",
+      "changes": [
+        {
+          "table": "R",
+          "op": "delete",
+          "old": {
+            "row_id": "r1",
+            "key": "a",
+            "category": "thermal"
+          }
+        },
+        {
+          "table": "R",
+          "op": "delete",
+          "old": {
+            "row_id": "r2",
+            "key": "a",
+            "category": "thermal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "changes": [
+        {
+          "table": "L",
+          "op": "update",
+          "old": {
+            "row_id": "l1",
+            "key": "a",
+            "region": "hall",
+            "reading": 10
+          },
+          "new": {
+            "row_id": "l1",
+            "key": "b",
+            "region": "hall",
+            "reading": 7
+          }
+        },
+        {
+          "table": "R",
+          "op": "insert",
+          "new": {
+            "row_id": "r3",
+            "key": "b",
+            "category": null
+          }
+        }
+      ]
+    }
+  ],
+  "reading_scale": 100,
+  "memory_keys": 10000
+}

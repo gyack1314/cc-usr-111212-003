@@ -1,0 +1,37 @@
+{
+  "left": [
+    {
+      "row_id": "l1",
+      "key": "a",
+      "region": "hall",
+      "reading": null
+    },
+    {
+      "row_id": "l2",
+      "key": "a",
+      "region": "hall",
+      "reading": null
+    },
+    {
+      "row_id": "l3",
+      "key": null,
+      "region": "outer",
+      "reading": 5
+    }
+  ],
+  "right": [
+    {
+      "row_id": "r1",
+      "key": "a",
+      "category": "thermal"
+    },
+    {
+      "row_id": "r2",
+      "key": "a",
+      "category": "thermal"
+    }
+  ],
+  "batches": [],
+  "reading_scale": 100,
+  "memory_keys": 10000
+}
